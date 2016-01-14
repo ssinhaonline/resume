@@ -1,0 +1,197 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,letterpaper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{black}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvheadnamewidth}{2}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Souradeep}{Sinha}
+%\title{Resume title}                               % optional, remove / comment the line if not wanted
+\address{128 Cambridge Street}{Syracuse,NY 13210}{}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+1~(315)~412~8844}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+%\phone[fixed]{+2~(345)~678~901}
+%\phone[fax]{+3~(456)~789~012}
+\email{ssinha04@syr.edu} % optional, remove / comment the line if not wanted
+%\homepage{www.whatever.com}                         % optional, remove / comment the line if not wanted
+\social[linkedin]{/in/souradeepsinha}                        % optional, remove / comment the line if not wanted
+%\social[twitter]{jdoe}                             % optional, remove / comment the line if not wanted
+\social[github]{ssinhaonline}                              % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+\section{Education}
+\cventry{2014--2016}{MS in Computer Science\hfill}{Syracuse University}{}{\textit{\break GPA (out of 4) - 3.52}}{Relevant Coursework: Analytical Data Mining, Fundamentals of Data Mining, Design and Analysis of Algorithms, Cryptography}  % arguments 3 to 6 can be left empty
+\cventry{2010--2014}{BTech in Information Technology\hfill}{West Bengal University of Technology}{}{\textit{\break GPA (out of 10) - 8.44}}{Relevant Coursework: Database Management Systems, Computer Networks, E-Commerce, Information and Coding Theory, Operations Research, Engineering Mathematics}
+
+%\section{Master thesis}
+%\cvitem{title}{\emph{Title}}
+%\cvitem{supervisors}{Supervisors}
+%\cvitem{description}{Short thesis abstract}
+
+\section{Professional Experience}
+\subsection{Related Experience}
+\cventry{2015--Present}{Graduate Researcher\hfill}{Data Lab, Syracuse University}{}{}{Advisor: Dr. Reza Zafarani, Area of Research: Social Networks, Social Media Mining
+\begin{itemize}%
+\item Implemented Bloom filter in Python to block spam accounts with 0.12\% false positives
+\item Tested intrusion detection techniques using Weka's Naive Bayes, J48 Decision Tree and kNN classifiers as well as Liblinear's SVM classifier
+\item Investigated psychology and computer science research on deception and provided feature recommendation for analysing deception in social data
+\item Collected, cleaned, preprocessed data using Python, Selenium and Beautiful Soup
+\end{itemize}}
+\cventry{2013--2013}{Data Analysis Intern\hfill}{Quikr,}{}{India}{
+\begin{itemize}%
+\item Investigated online advertisement data to identify consumer trends and buying patterns
+\item Developed statistical and predictive models that helped increase customer engagement time on premium ads by 14\%
+\item Provided graphical recommendations to increase user bounce times
+\end{itemize}}
+\cventry{2013--2014}{Database Lab Administrator\hfill}{Institute of Engineering and Management,}{}{India}{
+\begin{itemize}%
+\item Developed MySQL queries to effectively test core concepts of relational databases
+\item Designed course project with appropriate Visio schema diagrams and sample data to facilitate stored procedures, functions, triggers and error handling
+\item Collaborated and formulated a lesson plan aimed at increased student participation in labs\newline
+\end{itemize}}
+\subsection{Additional Experience}
+\cventry{2014--Present}{Late Night Manager\hfill}{Student Centers and Programming Services,}{Syracuse}{}{}
+\cventry{2015--2015}{Summer Staff\hfill}{Reservations and Building Operations,}{Syracuse}{}{}
+\cventry{2015--Present}{Event Staff\hfill}{Events and Technical Services,}{Syracuse}{}{}
+\cventry{2010--2014}{Business Development Associate\hfill}{In Good Taste,}{}{India}{}
+
+\section{Projects}
+\cventry{}{$\alpha$-Tweet\hfill}{Syracuse University}{}{}{
+\begin{itemize}%
+\item Designed scraper bot to collect tweet history for users and their followers
+\item Used NLTK to perform word tokenization and TF-IDF filtering to clean data 
+\item Modified Naive Bayes algorithm and Pearson's coefficient and identified negative correlation between tweet words and retweet possibility
+\end{itemize}}
+\cventry{}{AWS elasticity analysis with EC2, S3 and DynamoDB\hfill}{Syracuse University}{}{}{
+\begin{itemize}%
+\item Designed shell scripts to enable command line autologins to multiple EC2 instances
+\item Automated the procedure of data upload, download and performance monitoring with simple Python Boto3 API calls
+\end{itemize}}
+\cventry{}{Comparative study on dimensionality reduction techniques\hfill}{Syracuse University}{}{}{
+\begin{itemize}%
+\item Compared Random Projection and PCA to reduce a synthetic dataset of 60 features 
+\item Employed Agglomerative Hierarchical Analysis with Conditional Entropy and Normalized Mutual Information for cluster validation
+\end{itemize}}
+\cventry{}{ID3 Decision Tree with Python\hfill}{Syracuse University}{}{}{
+\begin{itemize}%
+\item Implemented a model capable of training and classifying nodes from any input dataset with varying parameters and splitting threshold values
+\end{itemize}}
+
+\section{Skills}
+\cvdoubleitem{\{Languages\}}{Python, Java, R}{\{DB/rDBMS\}}{MySQL, SQL Server 2010}
+\cvdoubleitem{\{Big Data\}}{Hadoop, MapReduce, HiveQL}{\{AWS Stack\}}{EC2, S3, DynamoDB}
+\cvdoubleitem{\{OS\}}{Linux, Unix}{\{Packages\}}{Pandas, Scipy, BeautifulSoup, Selenium,}
+\iffalse
+\section{Interests}
+\cvitem{hobby 1}{Description}
+\cvitem{hobby 2}{Description}
+\cvitem{hobby 3}{Description}
+\fi
+\section{Leadership Roles}
+\cventry{2015--Present}{Senator}{Graduate Student Organization}{Syracuse University}{}{}
+\cventry{2015--Present}{Executive Board Member}{Engineering and Comp Science GSO}{Syracuse University}{}{}
+\cventry{2014--Present}{Fellow}{Leadership and Cultural Program}{Syracuse University}{}{}
+\cventry{2014--Present}{Graduate Ambassador}{College of Enginering and Comp Science}{Syracuse University}{}{}
+\iffalse
+\cvlistitem{Item 1}
+\cvlistitem{Item 2}
+\cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
+\fi
+\section{Certifications}
+\cvlistitem{The Data Scientist's Toolbox - Johns Hopkins University}
+\cvlistitem{Introduction to Hadoop and Mapreduce - Cloudera}
+\cvlistitem{Data Wrangling with MongoDB - MongoDB}
+\section{Interests}
+\cvlistitem{Running(10K, 5K), Hiking, Soccer, Tennis}
+\cvlistitem{Geometric Drawing - Fractals, Spirals, Pentagrams, Zentangles, 1-5 Point Perspectives}
+\cvlistitem{Community Service - Child Education in India, Women Empowerment through Craft, Animal Welfare}
+\iffalse
+\cvlistdoubleitem{Item 1}{Item 4}
+\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+\cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
+\fi
+\iffalse
+\section{References}
+\begin{cvcolumns}
+  \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
+  \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
+  \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
+\end{cvcolumns}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\clearpage
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+\date{January 01, 1984}
+\opening{Dear Sir or Madam,}
+\closing{Yours faithfully,}
+\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
+
+Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
+
+Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
+
+Albert Einstein discovered that $e=mc^2$ in 1905.
+
+\[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]
+
+\makeletterclosing
+\fi
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
