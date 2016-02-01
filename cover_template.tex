@@ -12,7 +12,7 @@
 \moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{black}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 %\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
-%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 
 % character encoding
 %\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
@@ -52,6 +52,7 @@
 %----------------------------------------------------------------------------------
 \begin{document}
 %\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+\iffalse
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
 \section{Education}
@@ -172,28 +173,27 @@
 
 \clearpage
 \fi
+\fi
 %-----       letter       ---------------------------------------------------------
 % recipient data
-\recipient{<Insert Company Name>}{<Insert Informal Address>}
+\recipient{Solutions and Innovation Team}{IBM Watson Health \newline Boston, MA}
 \date{January 21, 2016}
 \opening{Dear Recruiter,}
-\closing{Yours faithfully,}
+\closing{Thanks,}
 %\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
 \makelettertitle
 
-I would like to express my interest for the position of Data Scientist at <Insert Company Name>. I would also like to take this opportunity to introduce myself.
+I would like to express my interest for the position of Data Scientist at Watson Health. It's about Watson saving human lives, and I want in!
+%I would also like to take this opportunity to introduce myself.
 
-I am a data science researcher and computer science student, graduating in May 2016, and am currently working at Dr. Reza Zafarani's research laboratory at Syracuse University. My area of research is Social Media Mining and I have over two years of experience in handling data of more than a million records and sometimes terabytes in size. Apart from this, I have also worked as a Data Analysis intern at Quikr India as an undergraduate student, where I had the opportunity of diving deep into India's demographically-rich advertisement dataset, and came up with statistical models which helped the firm increase customer engagement times by 12%
+I am a data science researcher and computer science student, graduating in May 2016, and am currently working at Dr. Reza Zafarani's research laboratory at Syracuse University. My area of research is Social Media Mining and I have over two years of experience in handling data of more than a million records and sometimes terabytes in size. Apart from this, I have also worked as a Data Analysis intern at Quikr India as an undergraduate student, where I had the opportunity of diving deep into India's demographically-rich advertisement dataset, and came up with statistical models which helped the firm increase customer engagement times by 12\%
 
 I also have experience in the field of technology as a Database Lab Administrator and also in the form of several academic projects for the last 6 years, where I worked on software development, computer networks, databases and ecommerce. To review my full professional experience, please visit https://www.linkedin.com/in/souradeepsinha 
 
 Given the skills required for this position, I believe that I will be able to fit in perfectly. I would look forward to your communication. Please feel free to reach me @ (315) 412 - 8844 or at ssinha04@syr.edu
-
-Thanks,
-
-Souradeep
-
-
+\newline
+\newline
+\newline
 \makeletterclosing
 %\fi
 %\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
